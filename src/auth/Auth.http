@@ -1,0 +1,10 @@
+@ModuleEndpoint = {{ Host }}/auth
+
+### Create an user
+POST {{ ModuleEndpoint }}/local/signup
+Content-Type: application/json
+
+{
+	"email": "email@gmail.com",
+	"password": "secretpassword"
+}
