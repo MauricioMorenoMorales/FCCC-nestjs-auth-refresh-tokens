@@ -17,3 +17,11 @@ Content-Type: application/json
 	"email": "{{ currentUserEmail }}",
 	"password": "{{ currentPassword }}"
 }
+
+### Log out an user
+POST {{ ModuleEndpoint }}/logout
+Authorization: Bearer {{ currentAccessToken }}
+
+### Refresh user's token
+POST {{ ModuleEndpoint }}/refresh
+Authorization: Bearer {{ currentRefreshToken }}
