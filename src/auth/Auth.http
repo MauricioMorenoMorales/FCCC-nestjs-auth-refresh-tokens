@@ -8,3 +8,12 @@ Content-Type: application/json
 	"email": "email@gmail.com",
 	"password": "secretpassword"
 }
+
+### Sign in an user
+POST {{ ModuleEndpoint }}/local/signin
+Content-Type: application/json
+
+{
+	"email": "{{ currentUserEmail }}",
+	"password": "{{ currentPassword }}"
+}
